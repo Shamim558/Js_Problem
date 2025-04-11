@@ -85,15 +85,11 @@ for (let i = 1; i <= 20; i += 2) {
       sum = sum + number
      return sum
  }
- 
  const result1 = sumArray([1,2,3,4,5,6])
  console.log(result1)
- 
  /**
   * 3. Write a JavaScript function named mergeArrays(arr1, arr2) that takes two arrays  as arguments and returns a new array. Ex. mergeArrays([1,2],[3,4])
   */
- 
- 
  function mergeArrays (arr1, arr2) {
      return[...arr1, ...arr2]
  }
@@ -126,8 +122,6 @@ function count (str) {
 let strr = "I want to be a Web Developer. I Am very hardworking And determined And i want job make A career in this industriy.";
 const result2 = count(strr);
 console.log(result);
-
-
 /**
  * Check whether a string contains all the vowels a, e, i, o, u
  */
@@ -137,11 +131,8 @@ function vowels (str) {
      return `yes here is all vowel words ${str}`
    } 
 }
-
-
 let vowelstr = "hello duniya i love you"
-const vowelsResult = vowels(vowelstr) 
-
+const vowelsResult = vowels(vowelstr)
 
 // Write a function to find the longest word in a given string.
 function largestword (str) {
@@ -432,4 +423,19 @@ const users = [
  const Electronics = product.filter(product => product.startsWith("E"));
  console.log(Electronics);
  
+ /**
+  * Write a program that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+  */
+
+ function bigPrice (a, b, c) {
+  // const mutiply = a * b;
+  if (a * b > c) {
+     return true
+  } else {
+     return false
+  }
+}
+
+console.log(bigPrice(0.5, 50, 9))
  
+
